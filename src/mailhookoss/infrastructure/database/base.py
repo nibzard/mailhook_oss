@@ -18,6 +18,8 @@ def import_all_models() -> None:
     """Import all models to register them with SQLAlchemy."""
     from mailhookoss.infrastructure.database.models import (  # noqa: F401
         APIKeyModel,
+        DomainModel,
+        MailboxModel,
         TenantModel,
     )
 
