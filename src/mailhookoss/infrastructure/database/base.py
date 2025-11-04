@@ -12,6 +12,19 @@ class Base(DeclarativeBase):
     pass
 
 
+# Import all models to ensure they're registered with Base.metadata
+# This is needed for Alembic autogenerate to work
+def import_all_models() -> None:
+    """Import all models to register them with SQLAlchemy."""
+    from mailhookoss.infrastructure.database.models import (  # noqa: F401
+        APIKeyModel,
+        TenantModel,
+    )
+
+
+import_all_models()
+
+
 class TimestampMixin:
     """Mixin for created_at and updated_at timestamps."""
 
