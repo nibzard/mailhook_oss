@@ -1,6 +1,6 @@
 """Mailbox database model."""
 
-from sqlalchemy import Boolean, ForeignKey, Index, JSON, String
+from sqlalchemy import JSON, Boolean, ForeignKey, Index, String
 from sqlalchemy.orm import Mapped, mapped_column
 
 from mailhookoss.domain.mailboxes.value_objects import (

@@ -3,7 +3,7 @@
 import base64
 import json
 
-from sqlalchemy import and_, or_, select
+from sqlalchemy import and_, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from mailhookoss.domain.emails.entities import Thread

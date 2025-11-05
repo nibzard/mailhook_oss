@@ -6,13 +6,11 @@ from mailhookoss.domain.common.exceptions import DomainException, ValidationErro
 class DomainError(DomainException):
     """Base exception for domain-related errors."""
 
-    pass
 
 
 class InvalidDomainNameError(ValidationError):
     """Raised when domain name is invalid."""
 
-    pass
 
 
 class DomainNotFoundError(DomainError):

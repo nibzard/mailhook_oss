@@ -6,13 +6,11 @@ from mailhookoss.domain.common.exceptions import DomainException, ValidationErro
 class TenantError(DomainException):
     """Base exception for tenant-related errors."""
 
-    pass
 
 
 class InvalidTenantNameError(ValidationError):
     """Raised when tenant name is invalid."""
 
-    pass
 
 
 class TenantNotFoundError(TenantError):

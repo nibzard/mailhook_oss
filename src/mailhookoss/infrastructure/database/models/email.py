@@ -1,7 +1,6 @@
 """Email database model."""
 
-import json
-from datetime import datetime, timezone
+from datetime import datetime
 
 from sqlalchemy import DateTime, Integer, String, Text
 from sqlalchemy.dialects.postgresql import JSON

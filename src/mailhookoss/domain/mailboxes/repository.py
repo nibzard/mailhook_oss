@@ -24,7 +24,6 @@ class MailboxRepository(Repository[Mailbox]):
         Returns:
             Mailbox if found, None otherwise
         """
-        pass
 
     @abstractmethod
     async def get_by_alias_or_id(
@@ -41,7 +40,6 @@ class MailboxRepository(Repository[Mailbox]):
         Returns:
             Mailbox if found, None otherwise
         """
-        pass
 
     @abstractmethod
     async def list_by_domain(
@@ -62,7 +60,6 @@ class MailboxRepository(Repository[Mailbox]):
         Returns:
             Tuple of (mailboxes, next_cursor, prev_cursor)
         """
-        pass
 
     @abstractmethod
     async def list_by_tenant(
@@ -81,4 +78,3 @@ class MailboxRepository(Repository[Mailbox]):
         Returns:
             Tuple of (mailboxes, next_cursor, prev_cursor)
         """
-        pass

@@ -6,7 +6,6 @@ from mailhookoss.domain.common.exceptions import AuthenticationError, DomainExce
 class APIKeyError(DomainException):
     """Base exception for API key-related errors."""
 
-    pass
 
 
 class APIKeyNotFoundError(APIKeyError):

@@ -19,7 +19,6 @@ class APIKeyRepository(Repository[APIKey]):
         Returns:
             APIKey if found, None otherwise
         """
-        pass
 
     @abstractmethod
     async def list_by_tenant(
@@ -38,7 +37,6 @@ class APIKeyRepository(Repository[APIKey]):
         Returns:
             Tuple of (api_keys, next_cursor, prev_cursor)
         """
-        pass
 
     @abstractmethod
     async def list_all(
@@ -55,4 +53,3 @@ class APIKeyRepository(Repository[APIKey]):
         Returns:
             Tuple of (api_keys, next_cursor, prev_cursor)
         """
-        pass

@@ -1,6 +1,6 @@
 """Create tenant use case."""
 
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 
 from mailhookoss.domain.tenants.entities import Tenant
 from mailhookoss.domain.tenants.exceptions import TenantAlreadyExistsError
@@ -38,7 +38,7 @@ class CreateTenantUseCase:
             raise TenantAlreadyExistsError(name)
 
         # Create new tenant
-        now = datetime.now(timezone.utc)
+        now = datetime.now(UTC)
         tenant = Tenant(
             id=generate_tenant_id(),
             name=name,
