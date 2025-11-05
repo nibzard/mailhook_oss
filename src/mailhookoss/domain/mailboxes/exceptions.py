@@ -6,13 +6,11 @@ from mailhookoss.domain.common.exceptions import DomainException, ValidationErro
 class MailboxError(DomainException):
     """Base exception for mailbox-related errors."""
 
-    pass
 
 
 class InvalidLocalPartError(ValidationError):
     """Raised when mailbox local part is invalid."""
 
-    pass
 
 
 class MailboxNotFoundError(MailboxError):

@@ -5,10 +5,9 @@ from typing import Annotated
 from fastapi import APIRouter, Depends, Query, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from mailhookoss.api.deps import get_db_session, get_tenant_context
-from mailhookoss.api.models import TenantContext
+from mailhookoss.api.deps import TenantContext, get_db_session, get_tenant_context
+from mailhookoss.api.pagination import PaginatedResponse
 from mailhookoss.api.v1.schemas.domain import DomainInput, DomainResponse
-from mailhookoss.api.v1.schemas.pagination import PaginatedResponse
 from mailhookoss.application.domains.create_domain import CreateDomainUseCase
 from mailhookoss.application.domains.delete_domain import DeleteDomainUseCase
 from mailhookoss.application.domains.get_domain import GetDomainUseCase

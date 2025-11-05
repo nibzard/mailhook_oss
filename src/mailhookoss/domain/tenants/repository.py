@@ -19,7 +19,6 @@ class TenantRepository(Repository[Tenant]):
         Returns:
             Tenant if found, None otherwise
         """
-        pass
 
     @abstractmethod
     async def list(
@@ -36,4 +35,3 @@ class TenantRepository(Repository[Tenant]):
         Returns:
             Tuple of (tenants, next_cursor, prev_cursor)
         """
-        pass

@@ -1,7 +1,6 @@
 """Base value object class for domain models."""
 
 from abc import ABC
-from typing import Any
 
 
 class ValueObject(ABC):

@@ -19,7 +19,6 @@ class DomainRepository(Repository[Domain]):
         Returns:
             Domain if found, None otherwise
         """
-        pass
 
     @abstractmethod
     async def get_by_domain_or_id(self, domain_or_id: str) -> Domain | None:
@@ -31,7 +30,6 @@ class DomainRepository(Repository[Domain]):
         Returns:
             Domain if found, None otherwise
         """
-        pass
 
     @abstractmethod
     async def list_by_tenant(
@@ -52,4 +50,3 @@ class DomainRepository(Repository[Domain]):
         Returns:
             Tuple of (domains, next_cursor, prev_cursor)
         """
-        pass

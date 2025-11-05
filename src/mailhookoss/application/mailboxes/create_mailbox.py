@@ -1,6 +1,6 @@
 """Create mailbox use case."""
 
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 
 from mailhookoss.domain.domains.exceptions import DomainNotFoundError
 from mailhookoss.domain.domains.repository import DomainRepository
@@ -79,7 +79,7 @@ class CreateMailboxUseCase:
             raise MailboxAlreadyExistsError(local_part, domain.domain)
 
         # Create new mailbox
-        now = datetime.now(timezone.utc)
+        now = datetime.now(UTC)
         filters = MailboxFilters(
             allow=filters_allow or [],
             deny=filters_deny or [],

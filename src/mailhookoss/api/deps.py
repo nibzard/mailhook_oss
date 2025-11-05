@@ -8,12 +8,7 @@ import structlog
 from fastapi import Depends, Header, HTTPException, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from mailhookoss.domain.api_keys.exceptions import (
-    APIKeyExpiredError,
-    InvalidAPIKeyError,
-)
 from mailhookoss.domain.api_keys.service import APIKeyService
-from mailhookoss.domain.common.exceptions import AuthenticationError, AuthorizationError
 from mailhookoss.infrastructure.database.repositories.api_key import (
     APIKeyRepositoryImpl,
 )

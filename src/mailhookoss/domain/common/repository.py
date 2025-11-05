@@ -24,7 +24,6 @@ class Repository(ABC, Generic[T]):
         Returns:
             Entity if found, None otherwise
         """
-        pass
 
     @abstractmethod
     async def save(self, entity: T) -> T:
@@ -36,7 +35,6 @@ class Repository(ABC, Generic[T]):
         Returns:
             Saved entity
         """
-        pass
 
     @abstractmethod
     async def delete(self, id: str) -> None:
@@ -45,7 +43,6 @@ class Repository(ABC, Generic[T]):
         Args:
             id: Entity identifier
         """
-        pass
 
     @abstractmethod
     async def exists(self, id: str) -> bool:
@@ -57,4 +54,3 @@ class Repository(ABC, Generic[T]):
         Returns:
             True if entity exists, False otherwise
         """
-        pass

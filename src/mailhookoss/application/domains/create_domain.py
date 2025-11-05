@@ -1,6 +1,6 @@
 """Create domain use case."""
 
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 
 from mailhookoss.domain.domains.entities import Domain
 from mailhookoss.domain.domains.exceptions import DomainAlreadyExistsError
@@ -60,7 +60,7 @@ class CreateDomainUseCase:
             raise DomainAlreadyExistsError(domain)
 
         # Create new domain
-        now = datetime.now(timezone.utc)
+        now = datetime.now(UTC)
         domain_entity = Domain(
             id=generate_domain_id(),
             tenant_id=tenant_id,

@@ -62,3 +62,7 @@ class AggregateRoot(Entity):
     def updated_at(self) -> datetime:
         """Get last update timestamp."""
         return self._updated_at
+
+    def touch(self) -> None:
+        """Update the updated_at timestamp to current time."""
+        self._updated_at = datetime.utcnow()

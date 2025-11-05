@@ -1,9 +1,8 @@
 """Tenant database model."""
 
-from datetime import datetime
 
-from sqlalchemy import String, Index
-from sqlalchemy.orm import Mapped, mapped_column, relationship
+from sqlalchemy import Index, String
+from sqlalchemy.orm import Mapped, mapped_column
 
 from mailhookoss.infrastructure.database.base import Base, TimestampMixin
 

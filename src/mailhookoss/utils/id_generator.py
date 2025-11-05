@@ -58,6 +58,11 @@ def generate_webhook_id() -> str:
     return generate_id("wh")
 
 
+def generate_webhook_delivery_id() -> str:
+    """Generate a webhook delivery ID."""
+    return generate_id("whd")
+
+
 def generate_api_key_id() -> str:
     """Generate an API key ID."""
     return generate_id("key")

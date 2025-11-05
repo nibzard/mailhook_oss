@@ -6,7 +6,7 @@ from datetime import datetime
 
 from mailhookoss.domain.api_keys.entities import APIKey
 from mailhookoss.domain.api_keys.value_objects import APIKeyType
-from mailhookoss.utils.id_generator import generate_api_key_id, generate_id
+from mailhookoss.utils.id_generator import generate_api_key_id
 
 
 class APIKeyService:
